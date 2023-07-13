@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    ::selection {
+        background-color: $primary-color;
+        color: $primary-color2;
+    }
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 ,p {
+    margin: 0;
+
+}
+
+
+
+// font face
+@font-face {
+    font-family: simsun;
+    src: url(../font/SIMSUN.ttf);
+}
+@font-face {
+    font-family: scriptbl;
+    src: url(../font/SCRIPTBL.TTF);
+}
+@font-face {
+    font-family: displaybold;
+    src: url(../font/AspireDemibold-YaaO.ttf);
+}
+@font-face {
+    font-family: afont;
+    src: url(../font/PlayfairDisplayExtrabold-1GDw2.ttf);
+}
+@font-face {
+    font-family: gloria ;
+    src: url(../font/KimberlieRegular-mLzm5.otf);
+}

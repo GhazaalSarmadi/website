@@ -1,0 +1,64 @@
+//mobile first
+.imgsection {
+    width: 100%;
+    margin: $l-margin auto;
+
+    &__row1,
+    &__row2,
+    &__row3,
+    &__row4 {
+        @include flexBox (space-around, center, column);
+        // width: 50%;
+
+        img {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+
+
+        .card {
+            @include flexBox(flex-start, center, column);
+            background-color: black;
+            margin: 15px;
+            border: solid;
+            width: calc(100% - 10px);
+
+
+            h3 {
+                font-size: 2em;
+                color: white;
+                font-family: displaybold;
+            }
+        }
+    }
+
+}
+
+
+//desktop
+@include respond(desktop) {
+    .imgsection {
+
+        &__row1,
+        &__row2,
+        &__row3,
+        &__row4 {
+            @include flexBox(center, center, row);
+
+            .card {
+                width: calc(33% - 12px);
+            }
+
+            img {
+                filter: grayscale(100%);
+            }
+
+            img:hover {
+                filter: grayscale(0);
+                cursor: move;
+            }
+        }
+
+    }
+}

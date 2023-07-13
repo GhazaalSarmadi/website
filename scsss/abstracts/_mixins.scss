@@ -1,0 +1,45 @@
+// share
+@mixin flexBox($justify-content , $align-items , $direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $direction;
+}
+
+@mixin position($position , $top, $right , $bottom , $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin backimg($size , $position , $attachment) {
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
+
+@mixin container() {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+// START BREAKPOINTS
+@mixin respond($breakpoint) {
+    @if $breakpoint ==phone {
+        @media only screen and (max-width: 700px) {
+            @content;
+        }
+
+    }
+
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 700px) {
+            @content;
+        }
+
+    }
+}

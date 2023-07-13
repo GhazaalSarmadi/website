@@ -1,0 +1,15 @@
+// abstracts
+
+@import 'abstracts/variables';
+@import 'abstracts/base';
+@import 'abstracts/mixins';
+
+
+//blocks
+@import 'home/layout/header';
+@import 'home/layout/slide';
+@import 'home/blocks/scrolltext';
+@import 'home/blocks/section';
+@import 'home/blocks/lastsection';
+@import 'home/blocks/cta';
+@import 'home/layout/footer';

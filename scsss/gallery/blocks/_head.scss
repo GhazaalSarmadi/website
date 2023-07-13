@@ -1,0 +1,31 @@
+//mobile first
+.head {
+    height: 80vh;
+    width: 100%;
+    font-family: gloria;
+    margin: $m-margin 0;
+
+    &__logo {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        margin: $s-margin auto;
+
+    }
+}
+
+
+//desktop
+@include respond (desktop) {
+    .head {
+        @include flexBox(center, center, column);
+
+        &__txt {
+            font-family: gloria;
+        }
+    }
+}

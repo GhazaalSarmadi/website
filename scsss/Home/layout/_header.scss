@@ -1,0 +1,104 @@
+//mobile first
+.nav {
+    @include flexBox(space-between, center, row);
+    width: $full-width;
+    background-color: transparent;
+    color: black;
+    position: relative;
+    z-index: 1000;
+
+    &__logo {
+        >img {
+            width: $logo-size;
+        }
+
+        #scroll-Logo {
+            display: none;
+        }
+    }
+
+    &__a {
+        display: none;
+
+        a {
+            margin: 8px;
+        }
+
+    }
+
+    &__icon {
+        i {
+            margin: 5px;
+        }
+    }
+
+    .show {
+        @include flexBox (center, center, none);
+        @include position (absolute, 100%, 0, 0, 0);
+        width: $full-width;
+        background-color: $primary-color2;
+        color: $primary-color;
+        animation: slide-in 0.5s forwards;
+    }
+}
+
+
+//desktop
+@include respond(desktop) {
+    .nav {
+        width: $full-width;
+        background-color: transparent;
+        color: black;
+        @include flexBox (space-between, center, row);
+        @include position (fixed, 0, auto, auto, auto);
+        z-index: 1000;
+
+        &__a {
+            @include flexBox(center, center, row);
+            padding: $s-padding ;
+            font-family: afont;
+            // font-size: small;
+            transition: 0.5s;
+
+        }
+
+        &__icon {
+            #bars {
+                display: none;
+            }
+        }
+
+        &.navbar {
+
+            background-color: $primary-color;
+            color: $primary-color2;
+
+            #scroll-Logo {
+                display: inline;
+                width: $logo-size;
+            }
+
+            #static-Logo {
+                display: none;
+            }
+        }
+
+        #scroll-Logo {
+            display: none;
+        }
+    }
+
+}
+
+
+
+@keyframes slide-in {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 50%;
+    }
+
+}

@@ -1,0 +1,16 @@
+.footer {
+    width: $full-width;
+    background-color: $primary-color;
+    color: $primary-color2;
+    text-align: center;
+    line-height: 3;
+
+
+    p {
+        @include container();
+    }
+
+    &__map {
+        width: $full-width;
+    }
+}

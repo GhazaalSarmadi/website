@@ -1,0 +1,35 @@
+.scroll-Txt {
+    @include flexBox(center, flex-start, none);
+    position: relative;
+    height: 200px;
+
+    &__line {
+        border: 2px dotted;
+        height: 100px;
+        animation: line 2s infinite;
+    }
+
+    h1,
+    h2 {
+        position: absolute;
+        font-family: scriptbl;
+    }
+    h1 {
+        top: 100px;
+    }
+
+    h2 {
+        top: 120px;
+    }
+}
+
+@keyframes line {
+    0% {
+        height: 0;
+    }
+
+    50% {
+        height: 50%;
+    }
+
+}

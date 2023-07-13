@@ -1,0 +1,46 @@
+.last-Section {
+    width: 100%;
+    @include flexBox(flex-start, center, column);
+    margin: $l-margin 0;
+
+    img {
+        width: calc(100% - 20px);
+    }
+
+    &__txt {
+        line-height: 2;
+        font-family: simsun;
+        font-weight: bold;
+        text-align: center;
+        margin: $s-margin;
+
+        h1 {
+            font-family: displaybold;
+            // @include container();
+            font-weight: bolder;
+        }
+    }
+}
+
+@include respond(desktop) {
+    .last-Section {
+        width: $full-width;
+        position: relative;
+        @include flexBox(space-between, center, row);
+        color: black;
+        margin: $l-margin 0;
+
+        img {
+            width: calc(30% - 4px);
+            margin: 0 $s-margin;
+        }
+
+        &__txt {
+            text-align: center;
+            margin: auto;
+            line-height: 2;
+            font-family: simsun;
+            font-weight: bold;
+        }
+    }
+}

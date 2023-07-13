@@ -1,0 +1,60 @@
+//mobile first
+.img-Section {
+    width: 100%;
+    margin: $l-margin auto;
+    @include flexBox (center, center, column);
+    flex-wrap: nowrap;
+
+    &__link {
+        width: 80%;
+        margin: $s-margin;
+        @include flexBox (center, center, column);
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            @include position (absolute, auto, auto, -20px, auto);
+            padding: $s-padding $m-padding;
+            background-color: $primary-color2;
+            color: $primary-color;
+            font-family: afont;
+        }
+
+        h2 {
+            font-family: displaybold;
+            font-size: 53px;
+            margin: 0;
+            @include position(relative, 20px, 0, 0, 0);
+            text-shadow: 2px 2px 1px rgb(255, 224, 158);
+        }
+    }
+}
+
+
+//desktop
+@include respond(desktop) {
+    .img-Section {
+        @include flexBox(center, center, row);
+        width: 100%;
+        margin: $l-margin 0;
+
+        &__link {
+            width: 100%;
+            margin: $s-margin;
+            @include flexBox (center, center, column);
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 5em;
+            }
+        }
+
+    }
+}
