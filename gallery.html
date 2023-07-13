@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/gallery.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="nav">
+
+        <nav class="nav__a">
+            <a href="./index.html">HOME</a>
+            <a id="gallery" href="./gallery.html">GALLERY</a>
+            <a id="shop">SHOP</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="head">
+        <a href="./index.html">
+            <div class="head__logo">
+                <img src="./images/homeimg/logo2.png" alt="">
+            </div>
+        </a>
+        <div class="head__txt">
+            <h1>-THERE IS WONDER IN THE UNIQUENESS OF EACH WEDDING WE CAPTURE -</h1>
+            <h2>There is so much happening on the day of your wedding, so much you wont see or remember. That is why you
+                will receive a large gallery in colour along with a duplicate gallery in black and white, all in a
+                beautiful
+                online gallery together with a storage USB as a backup.</h2>
+        </div>
+
+    </div>
+
+    <hr>
+
+
+    <div class="imgsection">
+        <div class="imgsection__row1">
+            <div class="card">
+                <img src="./images/galleryimg/row1-1.jpg" alt="">
+                <h3>Caroline and Michael | Kilshane House</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row1-2.jpg" alt="">
+                <h3>Sheen Falls Hotel | Rachel and Gearoid</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row1-3.jpg" alt="">
+                <h3>A Lyrath Wedding | Triona & Marcus</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row1-4.jpg" alt="">
+                <h3>A Christmas time wedding at Bellingham Castle
+                </h3>
+            </div>
+
+        </div>
+        <div class="imgsection__row2">
+            <div class="card">
+                <img src="./images/galleryimg/row2-1.jpg" alt="">
+                <h3>Coolbawn Quay with Deirdre & Darren</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row2-2.jpg" alt="">
+                <h3>Daniel & Siobhán | Darver Castle</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row2-3.jpg" alt="">
+                <h3>Emma and Aaron's at The Dingle Skellig Hotel</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row5-2.jpg" alt="">
+                <h3>Aoife & Brian | Inchydoney Island </h3>
+            </div>
+        </div>
+        <div class="imgsection__row3">
+
+            <div class="card">
+                <img src="./images/galleryimg/row3-1.jpg" alt="">
+                <h3>Pamela & Ronan | Ashley Park</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row3-2.jpg" alt="">
+                <h3>Maura & Doug at Muckross Park | Gougane Barra</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row3-3.jpg" alt="">
+                <h3>Romantic Los Cabos Destination Wedding</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row3-4.jpg" alt="">
+                <h3>Sea Island Spring Garden Party Inspired Wedding</h3>
+            </div>
+        </div>
+        <div class="imgsection__row4">
+            <div class="card">
+                <img src="./images/galleryimg/row4-1.jpg" alt="">
+                <h3>Magical Wedding in the Redwoods</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row4-2.jpg" alt="">
+                <h3>Fiona & Dickson</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row4-3.jpg" alt="">
+                <h3>Chloe & Charlie , Spain</h3>
+            </div>
+            <div class="card">
+                <img src="./images/galleryimg/row5-4.jpg" alt="">
+                <h3> Chris & Ash, Fyansford</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        let ShopTxt = document.querySelector("#shop");
+        let list = document.querySelector(".shop");
+
+        ShopTxt.onclick = openMenu;
+        function openMenu() {
+            list.classList.toggle("shop-List");
+        }
+    </script>
+</body>
+
+</html>
