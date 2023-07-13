@@ -85,6 +85,11 @@ h1, p {
     font-family: afont;
   }
 }
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(165, 165, 165)), to(transparent));
+  background-image: linear-gradient(360deg, rgb(165, 165, 165), transparent);
+}
+
 .categories {
   width: 100%;
 }
@@ -115,16 +120,27 @@ h1, p {
   width: 90%;
 }
 .ctgy__back {
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
   z-index: -1;
-  top: -20px;
-  right: -5px;
+  top: 0px;
+  right: 15%;
   position: absolute;
-  width: 90%;
+  width: 70%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #c3a794;
 }
 .ctgy__back > img {
   width: 100%;
+}
+.ctgy__back2 {
+  z-index: -1;
+  top: 0px;
+  right: 15%;
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #6b7667;
 }
 .ctgy__note h1 {
   font-family: gloria;
@@ -165,18 +181,16 @@ h1, p {
     width: 100%;
   }
   .ctgy__back {
-    top: -7%;
-    right: -5%;
+    top: 0;
+    right: 15%;
+  }
+  .ctgy__back2 {
+    width: 80%;
+    top: 0;
+    right: 12%;
+    background-color: #6b7667;
   }
   .ctgy__note {
     width: 60%;
-  }
-  .ctgy__note back {
-    z-index: -1;
-    top: -10%;
-    right: -8%;
-    position: absolute;
-    width: 90%;
-    height: 90%;
   }
 }/*# sourceMappingURL=shop.css.map */
