@@ -89,7 +89,7 @@ h1, p {
   width: 100%;
 }
 
-.first-ctgy {
+.ctgy {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,43 +106,43 @@ h1, p {
           flex-direction: column;
   width: 90%;
   margin: auto;
+  margin-bottom: 9em;
 }
-.first-ctgy__img {
+.ctgy__img {
   position: relative;
 }
-.first-ctgy__img img {
+.ctgy__img img {
   width: 90%;
 }
-.first-ctgy__back {
-  background-image: url(../images/shop/dress.jpg);
-  background-position: center;
-  background-size: cover;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+.ctgy__back {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
   z-index: -1;
   top: -20px;
   right: -5px;
   position: absolute;
-  width: 80%;
-  height: 90%;
+  width: 90%;
 }
-.first-ctgy__note h1 {
+.ctgy__back > img {
+  width: 100%;
+}
+.ctgy__note h1 {
   font-family: gloria;
 }
-.first-ctgy__note a {
+.ctgy__note a {
   font-family: afont;
   border: solid 2px;
   padding: 8px 16px;
   margin: 20px;
   border-radius: 100px;
 }
-.first-ctgy__note a:hover {
+.ctgy__note a:hover {
   background-color: black;
   color: white;
 }
 
 @media only screen and (min-width: 700px) {
-  .first-ctgy {
+  .ctgy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,21 +157,21 @@ h1, p {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .first-ctgy__img {
+  .ctgy__img {
     position: relative;
     width: 40%;
   }
-  .first-ctgy__img img {
+  .ctgy__img img {
     width: 100%;
   }
-  .first-ctgy__back {
-    top: -8%;
-    right: -8%;
+  .ctgy__back {
+    top: -7%;
+    right: -5%;
   }
-  .first-ctgy__note {
+  .ctgy__note {
     width: 60%;
   }
-  .first-ctgy__note back {
+  .ctgy__note back {
     z-index: -1;
     top: -10%;
     right: -8%;

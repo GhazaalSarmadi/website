@@ -3,11 +3,12 @@
     width: $full-width;
 }
 
-.first-ctgy {
+.ctgy {
     text-align: center;
     @include flexBox(space-between, center, column);
     width: 90%;
     margin: auto;
+    margin-bottom: 9em;
     // background-color: red;
 
     &__img {
@@ -20,19 +21,18 @@
     }
 
     &__back {
-        background-image: url(../images/shop/dress.jpg);
-        background-position: center;
-        background-size: cover;
-        filter: blur(5px);
+        filter: blur(8px);
         z-index: -1;
         top: -20px;
         right: -5px;
         position: absolute;
-        width: 80%;
-        height: 90%;
-        // background-color: #ffe4ce;
-        // border: 3px solid;
+        width: 90%;
+
+        >img {
+            width: 100%;
+        }
     }
+
 
     &__note {
         h1 {
@@ -46,19 +46,20 @@
             margin: 20px;
             border-radius: 100px;
         }
-        a:hover{
+
+        a:hover {
             background-color: black;
             color: white;
         }
-        
+
     }
-    
+
 }
 
 
 //desktop
 @include respond(desktop) {
-    .first-ctgy {
+    .ctgy {
         @include flexBox(space-between, center, row-reverse);
 
         &__img {
@@ -71,8 +72,8 @@
         }
 
         &__back {
-            top: -8%;
-            right: -8%;
+            top: -7%;
+            right: -5%;
         }
 
         &__note {
