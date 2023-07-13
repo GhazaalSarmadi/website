@@ -1,7 +1,10 @@
+//shared
 @import 'abstracts/variables';
 @import 'abstracts/base';
 @import 'abstracts/mixins';
 
+
+//block
 @import 'gallery/blocks/nav';
 @import 'gallery/blocks/head';
 @import 'gallery/blocks/imgsection';
