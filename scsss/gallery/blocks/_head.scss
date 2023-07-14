@@ -1,6 +1,5 @@
 //mobile first
 .head {
-    height: 80vh;
     width: 100%;
     font-family: gloria;
     margin: $m-margin 0;
@@ -12,6 +11,7 @@
     }
 
     &__txt {
+        width: 70%;
         text-align: center;
         margin: $s-margin auto;
 

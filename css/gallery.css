@@ -86,7 +86,6 @@ h1, p {
   }
 }
 .head {
-  height: 80vh;
   width: 100%;
   font-family: gloria;
   margin: 2em 0;
@@ -95,6 +94,7 @@ h1, p {
   width: 100%;
 }
 .head__txt {
+  width: 70%;
   text-align: center;
   margin: 1em auto;
 }
@@ -127,6 +127,7 @@ body {
 .imgsection {
   width: 100%;
   margin: 4em auto;
+  padding: 1em;
 }
 .imgsection__row1, .imgsection__row2, .imgsection__row3, .imgsection__row4 {
   display: -webkit-box;
@@ -141,11 +142,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 .imgsection__row1 img, .imgsection__row2 img, .imgsection__row3 img, .imgsection__row4 img {
   width: 100%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .imgsection__row1 .card, .imgsection__row2 .card, .imgsection__row3 .card, .imgsection__row4 .card {
   display: -webkit-box;
@@ -164,7 +164,7 @@ body {
   background-color: black;
   margin: 15px;
   border: solid;
-  width: calc(100% - 10px);
+  width: 100%;
 }
 .imgsection__row1 .card h3, .imgsection__row2 .card h3, .imgsection__row3 .card h3, .imgsection__row4 .card h3 {
   font-size: 2em;
@@ -177,9 +177,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -189,11 +189,16 @@ body {
             flex-direction: row;
   }
   .imgsection__row1 .card, .imgsection__row2 .card, .imgsection__row3 .card, .imgsection__row4 .card {
-    width: calc(33% - 12px);
+    width: 25%;
+  }
+  .imgsection__row1 .card h3, .imgsection__row2 .card h3, .imgsection__row3 .card h3, .imgsection__row4 .card h3 {
+    font-size: 1em;
   }
   .imgsection__row1 img, .imgsection__row2 img, .imgsection__row3 img, .imgsection__row4 img {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .imgsection__row1 img:hover, .imgsection__row2 img:hover, .imgsection__row3 img:hover, .imgsection__row4 img:hover {
     -webkit-filter: grayscale(0);

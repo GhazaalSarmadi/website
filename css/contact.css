@@ -85,8 +85,7 @@ h1, p {
     font-family: afont;
   }
 }
-.form {
-  width: 100%;
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,45 +99,85 @@ h1, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
   background-color: black;
   color: white;
+  height: 100vh;
 }
-.form__img {
-  width: calc(30% - 32px);
-}
-.form__img img {
+.contact__img {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   width: 100%;
 }
-.form > form {
-  width: 60%;
+.contact__img > img {
+  width: 100%;
+}
+.contact__form {
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
-.form__input ::-webkit-input-placeholder {
+.contact__form--input ::-webkit-input-placeholder {
   text-align: center;
+  color: white;
 }
-.form__input ::-moz-placeholder {
+.contact__form--input ::-moz-placeholder {
   text-align: center;
+  color: white;
 }
-.form__input :-ms-input-placeholder {
+.contact__form--input :-ms-input-placeholder {
   text-align: center;
+  color: white;
 }
-.form__input ::-ms-input-placeholder {
+.contact__form--input ::-ms-input-placeholder {
   text-align: center;
+  color: white;
 }
-.form__input ::placeholder {
+.contact__form--input ::placeholder {
   text-align: center;
+  color: white;
 }
-.form__input input {
+.contact__form--input > input {
+  color: white;
   display: block;
-  outline: 2px solid transparent;
   outline-offset: -2px;
   width: 50%;
-  height: 40px;
+  height: 50px;
   border: none;
-  border-bottom: 1px solid #ff0000;
+  border-bottom: 2px solid red;
   background-color: transparent;
-  padding: 0 16px;
-  color: #161616;
-  margin: 30px auto;
-  display: block;
+  padding: 0 1em;
+  margin: 2em auto;
+}
+.contact__form--input input[type=button] {
+  background-color: red;
+  font-size: 1em;
+  cursor: pointer;
+}
+.contact__form--input input[type=date]::-webkit-calendar-picker-indicator {
+  padding: 5px;
+  background-color: red;
+  fill: black;
+}
+.contact__form--input input[type=date]::-webkit-datetime-edit {
+  color: transparent;
+}
+.contact__form--input input:focus::-webkit-datetime-edit {
+  color: white;
+}
+
+@media only screen and (min-width: 700px) {
+  .contact {
+    height: auto;
+  }
+  .contact__img {
+    -webkit-filter: none;
+            filter: none;
+    width: 40%;
+  }
+  .contact__form {
+    position: static;
+    width: 60%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=contact.css.map */

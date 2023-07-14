@@ -5,17 +5,16 @@ body {
 .imgsection {
     width: 100%;
     margin: $l-margin auto;
+    padding: 1em;
 
     &__row1,
     &__row2,
     &__row3,
     &__row4 {
         @include flexBox (space-around, center, column);
-        // width: 50%;
-
+        text-align: center;
         img {
             width: 100%;
-            transition: 0.3s;
         }
 
 
@@ -25,7 +24,7 @@ body {
             background-color: black;
             margin: 15px;
             border: solid;
-            width: calc(100% - 10px);
+            width: 100%;
 
 
             h3 {
@@ -47,14 +46,18 @@ body {
         &__row2,
         &__row3,
         &__row4 {
-            @include flexBox(center, center, row);
+            @include flexBox(space-between, center, row);
 
             .card {
-                width: calc(33% - 12px);
+                width: 25%;
+                h3{
+                    font-size: 1em;
+                }
             }
 
             img {
                 filter: grayscale(100%);
+                transition: 0.3s;
             }
 
             img:hover {

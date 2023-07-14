@@ -1,47 +1,81 @@
-.form {
-    width: 100%;
-    // height: 100vh;
-    // background-color: red;
+//phone
+.contact {
     @include flexBox(space-between, center, row);
-    background-color: black;
-    color: white;
+    width: $full-width;
+    background-color: $primary-color;
+    color: $primary-color2;
+    height: 100vh;
 
     &__img {
-        width: calc(30% - 32px);
+        filter: blur(5px);
+        width: $full-width;
 
-        img {
-            width: 100%;
+        >img {
+            width: $full-width;
         }
     }
 
-    >form {
-        width: 60%;
+    &__form {
+        position: absolute;
+        width: $full-width;
         text-align: center;
+
+        &--input {
+            ::placeholder {
+                text-align: center;
+                color: $primary-color2;
+            }
+
+            >input {
+                color: white;
+                display: block;
+                outline-offset: -2px;
+                width: $half-width;
+                height: 50px;
+                border: none;
+                border-bottom: 2px solid red;
+                background-color: transparent;
+                padding: 0 $s-padding;
+                margin: $m-margin auto;
+            }
+
+            input[type=button] {
+                background-color: red;
+                font-size: 1em;
+                cursor: pointer;
+            }
+
+            input[type=date]::-webkit-calendar-picker-indicator {
+                padding: 5px;
+                background-color: red;
+                fill: black;
+            }
+            input[type=date]::-webkit-datetime-edit {
+                color: transparent;
+            }
+            input:focus::-webkit-datetime-edit {
+                color: white;
+            }
+        }
     }
+}
 
-    &__input {
-        ::placeholder {
+
+
+//desktop
+@include respond(desktop) {
+    .contact {
+        height: auto;
+
+        &__img {
+            filter: none;
+            width: 40%;
+        }
+
+        &__form {
+            position: static;
+            width: 60%;
             text-align: center;
-            // color: red;
         }
-
-        input {
-
-            display: block;
-            // font-size: 14px;
-            outline: 2px solid transparent;
-            outline-offset: -2px;
-            width: 50%;
-            height: 40px;
-            border: none;
-            border-bottom: 1px solid #ff0000;
-            background-color: transparent;
-            padding: 0 16px;
-            color: #161616;
-            margin: 30px auto;
-            display: block;
-
-        }
-
     }
 }
