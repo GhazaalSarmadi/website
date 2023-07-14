@@ -152,6 +152,7 @@ h1, p {
 .contact__form--input input[type=button] {
   background-color: white;
   font-size: 1em;
+  color: black;
   cursor: pointer;
 }
 .contact__form--input input[type=date]::-webkit-calendar-picker-indicator {
