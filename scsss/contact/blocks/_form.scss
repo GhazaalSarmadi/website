@@ -42,10 +42,9 @@
             input[type=button] {
                 background-color: red;
                 font-size: 1em;
-                color: black;
+                color: black;   
                 cursor: pointer;
             }
-
             input[type=date]::-webkit-calendar-picker-indicator {
                 padding: 5px;
                 background-color: $primary-color2;

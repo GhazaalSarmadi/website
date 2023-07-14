@@ -11,7 +11,7 @@
         width: $logo-size-mobile;
 
         >img {
-            width: 100%;
+            width: $full-width;
         }
 
         #scroll-Logo {
@@ -64,6 +64,10 @@
 
         }
 
+        a:hover {
+            color: gray;
+        }
+
         &__logo {
             width: $logo-size-desktop;
         }
@@ -75,7 +79,7 @@
         }
 
         &.navbar {
-
+            padding: 0;
             background-color: $primary-color;
             color: $primary-color2;
 

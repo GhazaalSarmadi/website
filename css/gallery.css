@@ -81,6 +81,9 @@ h1, p {
   padding: 10px;
   border: 10px solid white;
 }
+.nav__a a:hover {
+  color: gray;
+}
 
 @media only screen and (min-width: 700px) {
   .nav__a a {

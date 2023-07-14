@@ -2,7 +2,7 @@
     @include flexBox(center, flex-start, none);
     position: relative;
     height: 200px;
-
+    overflow: hidden;
     &__line {
         border: 2px dotted;
         height: 100px;

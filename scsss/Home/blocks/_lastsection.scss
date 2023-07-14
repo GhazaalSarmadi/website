@@ -2,7 +2,8 @@
     width: $full-width;
     @include flexBox(flex-start, center, column);
     margin: $l-margin 0;
-
+    overflow: hidden;
+    
     img {
         width: calc($full-width - 20px);
     }

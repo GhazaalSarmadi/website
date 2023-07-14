@@ -1,26 +1,19 @@
-.back1 {
+
+.backimg1 ,.backimg2 , .backimg3 {
     display: block;
-    width: 100%;
+    width: $full-width;
     height: 80vh;
-    background-image: url(../images/homeimg/first-img.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.backimg1 {
+    background-image: url(../images/homeimg/first-img.jpg);
 }
 
 .backimg2 {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    background-image:  url(../images/homeimg/second-img.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url(../images/homeimg/second-img.jpg);
 }
-
-.backimg3 {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    background-image:  url(../images/homeimg/third-img.jpg);
-    background-position: center;
-    background-size: cover;
+.backimg3{
+    background-image: url(../images/homeimg/third-img.jpg);
 }

@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For The Lovers</title>
 
-
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
@@ -26,11 +27,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- aos-animation -->
-    <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- js -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -60,18 +60,12 @@
                 <i class="fa fa-bars" id="bars"></i>
             </div>
         </header>
+
+        <!-- bootsrap tags -->
         <div class="carousel-inner">
-
-            <div class="back1 carousel-item active" style="width: 100%;">
-                <!-- <img src="./images/homeimg/first-img.jpg" class="d-block w-100" alt="..."> -->
-            </div>
-
-            <div class="backimg2 carousel-item" style="width: 100%;">
-                <!-- <img src="./images/homeimg/second-img.jpg" class="d-block w-100" alt="..."> -->
-            </div>
-            <div class="backimg3 carousel-item" style="width: 100%;">
-                <!-- <img src="./images/homeimg/third-img.jpg" class="d-block w-100" alt="..."> -->
-            </div>
+            <div class="backimg1 carousel-item active" style="width: 100%;"></div>
+            <div class="backimg2 carousel-item" style="width: 100%;"></div>
+            <div class="backimg3 carousel-item" style="width: 100%;"></div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,24 +81,24 @@
     <div class="scroll-Txt">
         <div class="scroll-Txt__line"></div>
         <h1>You Bring The Love,</h1>
-        <h2>we tell the story</h2>
+        <h2 data-aos="zoom-in-left">we tell the story</h2>
     </div>
 
 
     <!-- image section -->
     <div class="img-Section">
-        <div class="img-Section__link">
+        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
             <img src="./images/homeimg/cake.jpg" alt="left-img-cake">
             <a href="">All Design</a>
         </div>
 
-        <div class="img-Section__link">
+        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
             <h2>Wedding Day</h2>
             <img src="./images/homeimg/flower.jpg" alt="center-img-flower">
             <a href="">Our Story</a>
         </div>
 
-        <div class="img-Section__link">
+        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
             <img src="./images/homeimg/place.jpg" alt="right-img-place">
             <a href="">Preparations</a>
         </div>
@@ -125,7 +119,7 @@
     <div class="last-Section">
         <img src="./images/homeimg/leftimg.jpg" alt="left-img">
 
-        <div class="last-Section__txt">
+        <div class="last-Section__txt" data-aos="zoom-out-up" data-aos-duration="3000">
             <h1>Behind the Scenes as a Wedding Photographer</h1>
             <p>Being in the wedding photography industry is one of the coolest and most rewarding professions anyone can
                 have. Wedding photographers are taking pictures of the extraordinary social event that is the bringing
@@ -140,9 +134,7 @@
                 of the clients, and so on.
             </p>
         </div>
-        <!-- <div class="last-Section__img"> -->
         <img src="./images/homeimg/rightimg.jpg" alt="right-img">
-        <!-- </div> -->
     </div>
 
 
@@ -197,6 +189,11 @@
                 ScrollDesign.classList.remove("navbar");
             }
         }
+    </script>
+
+
+    <script>
+        AOS.init();
     </script>
 </body>
 

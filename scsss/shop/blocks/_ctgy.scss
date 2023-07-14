@@ -25,25 +25,17 @@ body {
         }
     }
 
-    &__back {
+    &__back , &__back2 {
         @include position(absolute, 0px, 15%, auto, auto);
         z-index: -1;
         width: 70%;
         height: 90%;
         border-radius: 50%;
-        background-color: #c3a794;
-
-        >img {
-            width: $full-width;
-        }
     }
-
+    &__back{
+        background-color: #c3a794;
+    }
     &__back2 {
-        @include position(absolute, 0px, 15%, auto, auto);
-        z-index: -1;
-        width: 70%;
-        height: 90%;
-        border-radius: 50%;
         background-color: #6b7667;
     }
 
@@ -84,16 +76,10 @@ body {
             }
         }
 
-        &__back {
+        &__back , &__back2{
+            width: 77%;
             top: 0;
             right: 15%;
-        }
-
-        &__back2 {
-            @include container();
-            top: 0;
-            right: 12%;
-            background-color: #6b7667;
         }
 
         &__note {

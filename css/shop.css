@@ -81,6 +81,9 @@ h1, p {
   padding: 10px;
   border: 10px solid white;
 }
+.nav__a a:hover {
+  color: gray;
+}
 
 @media only screen and (min-width: 700px) {
   .nav__a a {
@@ -123,7 +126,7 @@ body {
 .ctgy__img img {
   width: 90%;
 }
-.ctgy__back {
+.ctgy__back, .ctgy__back2 {
   position: absolute;
   top: 0px;
   right: 15%;
@@ -133,21 +136,11 @@ body {
   width: 70%;
   height: 90%;
   border-radius: 50%;
+}
+.ctgy__back {
   background-color: #c3a794;
 }
-.ctgy__back > img {
-  width: 100%;
-}
 .ctgy__back2 {
-  position: absolute;
-  top: 0px;
-  right: 15%;
-  bottom: auto;
-  left: auto;
-  z-index: -1;
-  width: 70%;
-  height: 90%;
-  border-radius: 50%;
   background-color: #6b7667;
 }
 .ctgy__note h1 {
@@ -188,16 +181,10 @@ body {
   .ctgy__img img {
     width: 100%;
   }
-  .ctgy__back {
+  .ctgy__back, .ctgy__back2 {
+    width: 77%;
     top: 0;
     right: 15%;
-  }
-  .ctgy__back2 {
-    width: 80%;
-    margin: 0 auto;
-    top: 0;
-    right: 12%;
-    background-color: #6b7667;
   }
   .ctgy__note {
     width: 60%;
