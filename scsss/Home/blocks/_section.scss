@@ -1,18 +1,18 @@
 //mobile first
 .img-Section {
-    width: 100%;
+    width: $full-width;
     margin: $l-margin auto;
     @include flexBox (center, center, column);
     flex-wrap: nowrap;
 
     &__link {
-        width: 80%;
+       @include container();
         margin: $s-margin;
         @include flexBox (center, center, column);
         position: relative;
 
         img {
-            width: 100%;
+            width: $full-width;
         }
 
         a {
@@ -38,17 +38,17 @@
 @include respond(desktop) {
     .img-Section {
         @include flexBox(center, center, row);
-        width: 100%;
+        width: $full-width;
         margin: $l-margin 0;
 
         &__link {
-            width: 100%;
+            width: $full-width;
             margin: $s-margin;
             @include flexBox (center, center, column);
             position: relative;
 
             img {
-                width: 100%;
+                width: $full-width;
             }
 
             h2 {

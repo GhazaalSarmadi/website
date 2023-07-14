@@ -1,10 +1,10 @@
 // mobile first
 .nav {
     @include flexBox(center, center, row);
-    width: 100%;
+    width: $full-width;
     height: 50px;
-    background-color: black;
-    color: white;
+    background-color: $primary-color;
+    color: $primary-color2;
     margin-bottom: $m-margin;
 
 
@@ -14,10 +14,10 @@
             font-size: small;
 
             &:nth-child(2) {
-                color: black;
-                background-color: white;
+                color: $primary-color;
+                background-color: $primary-color2;
                 padding: 10px;
-                border: 10px solid white;
+                border: 10px solid $primary-color2;
             }
         }
     }
@@ -31,7 +31,7 @@
     .nav {
         &__a {
             a {
-                margin: 15px;
+                margin: $s-margin;
                 font-size: larger;
                 font-family: afont;
             }

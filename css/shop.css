@@ -80,7 +80,7 @@ h1, p {
 
 @media only screen and (min-width: 700px) {
   .nav__a a {
-    margin: 15px;
+    margin: 1em;
     font-size: larger;
     font-family: afont;
   }
@@ -120,10 +120,12 @@ body {
   width: 90%;
 }
 .ctgy__back {
-  z-index: -1;
+  position: absolute;
   top: 0px;
   right: 15%;
-  position: absolute;
+  bottom: auto;
+  left: auto;
+  z-index: -1;
   width: 70%;
   height: 90%;
   border-radius: 50%;
@@ -133,10 +135,12 @@ body {
   width: 100%;
 }
 .ctgy__back2 {
-  z-index: -1;
+  position: absolute;
   top: 0px;
   right: 15%;
-  position: absolute;
+  bottom: auto;
+  left: auto;
+  z-index: -1;
   width: 70%;
   height: 90%;
   border-radius: 50%;
@@ -148,7 +152,7 @@ body {
 .ctgy__note a {
   font-family: afont;
   border: solid 2px;
-  padding: 8px 16px;
+  padding: 0.5em 1em;
   margin: 20px;
   border-radius: 100px;
 }
@@ -186,6 +190,7 @@ body {
   }
   .ctgy__back2 {
     width: 80%;
+    margin: 0 auto;
     top: 0;
     right: 12%;
     background-color: #6b7667;

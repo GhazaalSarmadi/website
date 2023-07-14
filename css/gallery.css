@@ -80,7 +80,7 @@ h1, p {
 
 @media only screen and (min-width: 700px) {
   .nav__a a {
-    margin: 15px;
+    margin: 1em;
     font-size: larger;
     font-family: afont;
   }
@@ -162,7 +162,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: black;
-  margin: 15px;
+  margin: 1em;
   border: solid;
   width: 100%;
 }

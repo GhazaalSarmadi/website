@@ -80,7 +80,7 @@ h1, p {
 
 @media only screen and (min-width: 700px) {
   .nav__a a {
-    margin: 15px;
+    margin: 1em;
     font-size: larger;
     font-family: afont;
   }
@@ -144,20 +144,19 @@ h1, p {
   width: 50%;
   height: 50px;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid white;
   background-color: transparent;
   padding: 0 1em;
   margin: 2em auto;
 }
 .contact__form--input input[type=button] {
-  background-color: red;
+  background-color: white;
   font-size: 1em;
   cursor: pointer;
 }
 .contact__form--input input[type=date]::-webkit-calendar-picker-indicator {
   padding: 5px;
-  background-color: red;
-  fill: black;
+  background-color: white;
 }
 .contact__form--input input[type=date]::-webkit-datetime-edit {
   color: transparent;

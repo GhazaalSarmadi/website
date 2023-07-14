@@ -13,7 +13,7 @@ body {
     @include flexBox(space-between, center, column);
     width: 90%;
     margin: auto;
-    margin-bottom: 9em;
+    margin-bottom: $xxl-margin;
     // background-color: red;
 
     &__img {
@@ -26,27 +26,21 @@ body {
     }
 
     &__back {
-        // border: 5px solid;
-
+        @include position(absolute, 0px, 15%, auto, auto);
         z-index: -1;
-        top: 0px;
-        right: 15%;
-        position: absolute;
         width: 70%;
         height: 90%;
         border-radius: 50%;
         background-color: #c3a794;
 
         >img {
-            width: 100%;
+            width: $full-width;
         }
     }
 
     &__back2 {
+        @include position(absolute, 0px, 15%, auto, auto);
         z-index: -1;
-        top: 0px;
-        right: 15%;
-        position: absolute;
         width: 70%;
         height: 90%;
         border-radius: 50%;
@@ -61,14 +55,14 @@ body {
         a {
             font-family: afont;
             border: solid 2px;
-            padding: 8px 16px;
+            padding: $xs-padding $s-padding;
             margin: 20px;
             border-radius: 100px;
         }
 
         a:hover {
-            background-color: black;
-            color: white;
+            background-color: $primary-color;
+            color: $primary-color2;
         }
 
     }
@@ -86,7 +80,7 @@ body {
             width: 40%;
 
             img {
-                width: 100%
+                width: $full-width;
             }
         }
 
@@ -96,7 +90,7 @@ body {
         }
 
         &__back2 {
-            width: 80%;
+            @include container();
             top: 0;
             right: 12%;
             background-color: #6b7667;

@@ -27,34 +27,33 @@
             }
 
             >input {
-                color: white;
+                color: $primary-color2;
                 display: block;
                 outline-offset: -2px;
                 width: $half-width;
                 height: 50px;
                 border: none;
-                border-bottom: 2px solid red;
+                border-bottom: 2px solid $primary-color2;
                 background-color: transparent;
                 padding: 0 $s-padding;
                 margin: $m-margin auto;
             }
 
             input[type=button] {
-                background-color: red;
+                background-color: $primary-color2;
                 font-size: 1em;
                 cursor: pointer;
             }
 
             input[type=date]::-webkit-calendar-picker-indicator {
                 padding: 5px;
-                background-color: red;
-                fill: black;
+                background-color: $primary-color2;
             }
             input[type=date]::-webkit-datetime-edit {
                 color: transparent;
             }
             input:focus::-webkit-datetime-edit {
-                color: white;
+                color: $primary-color2;
             }
         }
     }

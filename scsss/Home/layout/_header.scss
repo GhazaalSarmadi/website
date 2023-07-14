@@ -3,7 +3,7 @@
     @include flexBox(space-between, center, row);
     width: $full-width;
     background-color: transparent;
-    color: black;
+    color: $primary-color;
     position: relative;
     z-index: 1000;
 
@@ -48,7 +48,7 @@
     .nav {
         width: $full-width;
         background-color: transparent;
-        color: black;
+        color: $primary-color;
         @include flexBox (space-between, center, row);
         @include position (fixed, 0, auto, auto, auto);
         z-index: 1000;
