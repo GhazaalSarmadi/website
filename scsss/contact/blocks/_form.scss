@@ -33,14 +33,14 @@
                 width: $half-width;
                 height: 50px;
                 border: none;
-                border-bottom: 2px solid $primary-color2;
+                border-bottom: 2px solid red;
                 background-color: transparent;
                 padding: 0 $s-padding;
                 margin: $m-margin auto;
             }
 
             input[type=button] {
-                background-color: $primary-color2;
+                background-color: red;
                 font-size: 1em;
                 color: black;
                 cursor: pointer;
