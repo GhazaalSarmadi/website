@@ -31,7 +31,7 @@ We have collected the best photographers in this website for you to have special
   + Partials
   + import
   + Mixins
-```css
+```sass
 $primary-color: black;
 $primary-color2: white;
 $form-color:red;
