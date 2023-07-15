@@ -68,6 +68,22 @@ $form-color:red;
   + Change design for navbar with scroll
   + Show menu on mobile viewport
 
+```js
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        let ScrollDesign = document.querySelector(".nav");
+
+        function scrollFunction() {
+            if (window.pageYOffset > 100) {
+                ScrollDesign.classList.add("navbar");
+            } else {
+                ScrollDesign.classList.remove("navbar");
+            }
+        }
+    </script>
+```
+
+
 **libraries**
 + Bootstrap
   + Carousel for slide section in index.html
