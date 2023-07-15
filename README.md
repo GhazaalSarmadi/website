@@ -31,10 +31,23 @@ We have collected the best photographers in this website for you to have special
   + Partials
   + import
   + Mixins
+    
 ```sass
 $primary-color: black;
 $primary-color2: white;
 $form-color:red;
+```
+
+```css
+.nav {
+        &__a {
+            a {
+                margin: $s-margin;
+                font-size: larger;
+                font-family: afont;
+            }
+        }
+    }
 ```
 4. js
   + Change design for navbar with scroll
