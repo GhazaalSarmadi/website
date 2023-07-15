@@ -34,3 +34,13 @@ We have collected the best photographers in this website for you to have special
  
 + Aos-animation
 + Fontawesome
+
+
+```html
+<div class="cta">
+        <div class="cta__txt">
+            <h2>Golden Moment Wedding Photography & Film</h2>
+            <h3>ARE YOU READY TO EXPERIENCE <br> YOUR SPECIAL DAY WITH US?</h3>
+            <a href="./contact.html">Contact With Us</a>
+        </div>
+    </div>
