@@ -103,8 +103,7 @@ $form-color:red;
   + Create a repository
   + Deploy to personal pages
 
----
-    
+
 **libraries**
 + Bootstrap
   + Carousel for slide section in index.html
