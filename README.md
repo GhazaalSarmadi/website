@@ -26,13 +26,16 @@ We have collected the best photographers in this website for you to have special
   +  Flexbox
 
 + SAAS
-  + DRY
   + Variables
   + Nesting
   + Partials
   + import
   + Mixins
-
+```css
+$primary-color: black;
+$primary-color2: white;
+$form-color:red;
+```
 4. js
   + Change design for navbar with scroll
   + Show menu on mobile viewport
