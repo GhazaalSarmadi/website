@@ -3,12 +3,12 @@ We have collected the best photographers in this website for you to have special
 ## Key Topics
 
 **language**
-+ HTML
+1. HTML
   + Semantic elements, tags
   + Attributes
   + Best practices: indentation, file naming conventions and directory structure
     
-+ CSS
+2. CSS
   +  Class vs. id
   +  Selectors
   +  Box model
@@ -16,7 +16,7 @@ We have collected the best photographers in this website for you to have special
   +  Color: hexadecimal, rgb and named
   +  Flexbox
 
-+ SAAS
+3. SAAS
   + DRY
   + Variables
   + Nesting
@@ -24,7 +24,7 @@ We have collected the best photographers in this website for you to have special
   + import
   + Mixins
 
-+ js
+4. js
   + Change design for navbar with scroll
   + Show menu on mobile viewport
 
