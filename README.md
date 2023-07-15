@@ -7,7 +7,8 @@ We have collected the best photographers in this website for you to have special
   + Semantic elements, tags
   + Attributes
   + Best practices: indentation, file naming conventions and directory structure
-  + ```html
+    
+ ```html
 <div class="cta">
         <div class="cta__txt">
             <h2>Golden Moment Wedding Photography & Film</h2>
