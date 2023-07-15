@@ -49,6 +49,21 @@ $form-color:red;
         }
     }
 ```
+
+```sass
+@import 'abstracts/variables';
+@import 'abstracts/base';
+@import 'abstracts/mixins';
+```
+
+```sass
+@mixin flexBox($justify-content , $align-items , $direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $direction;
+}
+```
 4. js
   + Change design for navbar with scroll
   + Show menu on mobile viewport
