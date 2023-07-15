@@ -91,5 +91,4 @@ $form-color:red;
 + Aos-animation
 + Fontawesome
 
-(./images/code/code.png) [library code]!
-
+![library-code](./images/code/code.png)
