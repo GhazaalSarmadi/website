@@ -83,7 +83,18 @@ $form-color:red;
     </script>
 ```
 
++ Git & Git workflow
+  + git add
+  + git commit
+  + git push
+  + git pull
+  + git rm
 
++ GitHub
+  + Create a repository
+  + Deploy to personal pages
+
+    
 **libraries**
 + Bootstrap
   + Carousel for slide section in index.html
@@ -92,3 +103,7 @@ $form-color:red;
 + Fontawesome
 
 ![library-code](./images/code/code.png)
+
+
+
+
