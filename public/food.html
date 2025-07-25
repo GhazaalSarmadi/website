@@ -52,7 +52,7 @@
             <!-- From Uiverse.io by reglobby -->
             <input class="input" placeholder="جستجو">
             <a href="./basket.html">
-                <img src="./images/svg/cart-shopping-solid.svg" alt="" >
+                <img src="./images/svg/cart-shopping-solid.svg" alt="">
                 <div class="count"></div>
             </a>
             <i class="fa-solid fa-bars" id="open"></i>
@@ -111,7 +111,7 @@
             referrerpolicy="no-referrer-when-downgrade" class="footer__map"></iframe>
     </div>
 
-<script>
+    <script>
         const menuIcon = document.querySelector('#open');
         const menu = document.querySelector('.nav__a');
 
@@ -150,14 +150,12 @@
                 }
             }
             try {
-                const res = await fetch("http://localhost:3000/api/products-by-category", {
+
+                const res = await fetch("/api/products-by-category", {
                     method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
+                    headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ categoryIds })
                 });
-
                 const data = await res.json();
                 // یک شی برای دسترسی سریع به تمام محصولات بر اساس ID
                 const allProducts = {};
