@@ -1,21 +1,37 @@
+/* استایل‌های مشترک */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+@font-face {
+  font-family: vazirmatn;
+  src: url(../font/Vazirmatn-Light.woff2);
+}
+@font-face {
+  font-family: vazirthin;
+  src: url(../font/../font/Vazirmatn-Medium.woff2);
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: #f7f3f5 !important;
+  font-family: 'vazirthin', sans-serif;
+
 }
-body ::-moz-selection {
-  background-color: black;
-  color: white;
-}
+
+
 body ::selection {
   background-color: black;
   color: white;
 }
+
+body ::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
 
 a {
   display: inline-block;
@@ -23,168 +39,442 @@ a {
   text-decoration: none;
 }
 
-h1, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
-@font-face {
-  font-family: simsun;
-  src: url(../font/SIMSUN.ttf);
-}
-@font-face {
-  font-family: scriptbl;
-  src: url(../font/SCRIPTBL.TTF);
-}
-@font-face {
-  font-family: displaybold;
-  src: url(../font/AspireDemibold-YaaO.ttf);
-}
-@font-face {
-  font-family: afont;
-  src: url(../font/PlayfairDisplayExtrabold-1GDw2.ttf);
-}
-@font-face {
-  font-family: gloria;
-  src: url(../font/PlayfairDisplaySemiboldItalic-YzEYO.ttf);
-}
-@font-face {
-  font-family: def;
-  src: url(../font/PlayfairDisplayMedium-9YKZK.ttf);
-}
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
-  height: 50px;
-  background-color: black;
-  color: white;
-  margin-bottom: 2em;
-}
-.nav__a a {
-  margin: 4px;
-  font-size: small;
-}
-.nav__a a:nth-child(4) {
+  background-color: #fff;
   color: black;
-  background-color: white;
-  padding: 10px;
-  border: 10px solid white;
-}
-.nav__a a:hover {
-  color: gray;
-}
-
-@media only screen and (min-width: 700px) {
-  .nav__a a {
-    margin: 1em;
-    font-size: larger;
-    font-family: afont;
-  }
-}
-.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  background-color: black;
-  color: white;
-  height: 100vh;
-}
-.contact__img {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  width: 100%;
-}
-.contact__img > img {
-  width: 100%;
-}
-.contact__form {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-}
-.contact__form--input ::-webkit-input-placeholder {
-  text-align: center;
-  color: white;
-}
-.contact__form--input ::-moz-placeholder {
-  text-align: center;
-  color: white;
-}
-.contact__form--input :-ms-input-placeholder {
-  text-align: center;
-  color: white;
-}
-.contact__form--input ::-ms-input-placeholder {
-  text-align: center;
-  color: white;
-}
-.contact__form--input ::placeholder {
-  text-align: center;
-  color: white;
-}
-.contact__form--input > input {
-  color: white;
-  display: block;
-  outline-offset: -2px;
-  width: 50%;
-  height: 50px;
-  border: none;
-  border-bottom: 2px solid red;
-  background-color: transparent;
-  padding: 0 1em;
-  margin: 2em auto;
-}
-.contact__form--input input[type=button] {
-  background-color: red;
-  font-size: 1em;
-  color: black;
-  cursor: pointer;
-}
-.contact__form--input input[type=date]::-webkit-calendar-picker-indicator {
-  padding: 5px;
-  background-color: white;
-}
-.contact__form--input input[type=date]::-webkit-datetime-edit {
-  color: transparent;
-}
-.contact__form--input input:focus::-webkit-datetime-edit {
-  color: white;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1000;
 }
 
-@media only screen and (min-width: 700px) {
-  .contact {
-    height: auto;
+.nav__a>ul>li {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+
+.nav__a ul li a {
+  padding: 0 15px;
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'vazirmatn', sans-serif !important;
+  font-size: 17px;
+}
+
+.nav__a ul li a i {
+  margin-right: 5px;
+}
+
+.nav__a ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__a ul li ul {
+  position: absolute;
+  width: 150px;
+  background: #fff;
+  top: 55px;
+  right: 20px;
+  box-shadow: 0px 1px 6px #e6e6e6;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease-in-out;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.nav__a ul li ul li {
+  list-style: none;
+  width: 100%;
+}
+
+.nav__a ul li ul li a {
+  padding: 9px 15px;
+  display: block;
+  font-weight: normal;
+
+}
+
+.nav__a ul li ul li a:hover {
+  background: #5caf21;
+  color: #fff;
+}
+
+.nav__a>ul>li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 55px;
+}
+
+.nav__icon {
+  display: flex;
+  margin-right: 25%;
+  align-items: center;
+  >img {
+    width: 25px;
+    margin-right: 12px;
   }
-  .contact__img {
-    -webkit-filter: none;
-            filter: none;
-    width: 40%;
-  }
-  .contact__form {
-    position: static;
+}
+  /* From Uiverse.io by ErzenXz */
+  .input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
     width: 60%;
-    text-align: center;
+    height: 30px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
   }
-}/*# sourceMappingURL=contact.css.map */
+
+  .input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+
+  .input:active {
+    transform: scale(0.95);
+  }
+
+  .input:focus {
+    border: 2px solid grey;
+  }
+
+
+
+.fa-brands {
+  color: gray;
+  border-radius: 100%;
+  border: solid gray;
+}
+
+.footer {
+
+  width: 100%;
+  background-color: #2c2c2c;
+  color: white;
+  text-align: center;
+  display: flex;
+  height: 65vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer p {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__icon img{
+width: 35px;
+margin: 10px;
+}
+
+.footer__img img {
+  width: 70px;
+}
+
+
+.footer__map {
+  width: 100%;
+  height: 25vh;
+}
+
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.contentImage {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+
+  >img {
+    width: auto;
+    height: -webkit-fill-available;
+  }
+}
+
+.info {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin: 15px auto;
+  width: 90%;
+  padding: 15px;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+form {
+  margin: 15px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: right;
+
+  >.button {
+    font-size: medium;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+  }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0;
+
+  >.col {
+    margin: 8px 0;
+  }
+}
+
+
+
+.col-full {
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  /* Include padding and border in width calculation */
+}
+
+.textarea-field {
+  height: 100px;
+  resize: vertical;
+  /* Allow only vertical resizing */
+}
+
+@media (min-width: 768px) {
+
+  /* استایل مخصوص منو لپ تاپ */
+  
+  .nav{
+    height: 90px;
+}
+  .nav__a {
+    display: block;
+    position: static;
+    /* در دسکتاپ، منو دیگه نیازی به ثابت بودن نداره */
+  }
+
+  #open {
+    display: none;
+  }
+
+  .nav__a {
+    display: -webkit-box;
+    width: 40%;
+    padding: 1em;
+    font-family: afont;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .nav a:hover {
+    color: gray;
+  }
+
+  .nav__logo {
+    width: 12em;
+
+    >img {
+      width: 100%;
+    }
+  }
+
+  .nav__icon #bars {
+    display: none;
+  }
+
+  .nav.navbar {
+    padding: 0;
+    background-color: #f1f1f1;
+    color: black;
+    position: fixed;
+  }
+
+
+  .row {
+    flex-direction: row;
+  }
+
+  .col {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 10px 60px;
+    margin-right: 40%;
+
+  }
+
+  form {
+    >strong {
+      margin-right: 45%;
+    }
+  }
+
+  .fa-brands {
+    font-size: 25px;
+    padding: 15px;
+    margin: 20px;
+  }
+
+
+  .footer__address ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+/* استایل موبایل */
+@media (max-width: 766px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    >.nav__icon {
+      width: 25%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  /* استایل مخصوص منو موبایل */
+  .nav__a {
+    display: none;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a6a6a6;
+    /*  بک گراند تیره برای پوشاندن صفحه */
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    /* تا زمانی که باز نشده، کلیک روی آن بی اثر است */
+    transition: opacity 0.3s ease;
+    /* انیمیشن برای باز و بسته شدن */
+  }
+
+  .menu_phone {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    /* کلیک روی منو فعال میشه */
+  }
+
+  .input {
+    display: none;
+  }
+
+  .nav__logo {
+    width: 35%;
+
+    >img {
+      width: 100%;
+    }
+  }
+
+  form {
+    >strong {
+      margin-right: 25%;
+    }
+  }
+  .nav__a ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+
+    >li {
+      text-align: center;
+
+      >a {
+        color: red;
+      }
+    }
+  }
+
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    padding: 0;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin-right: 25%;
+  }
+
+  .fa-brands {
+    font-size: 15px;
+    padding: 12px;
+    margin: 20px 15px;
+  }
+
+  .footer__address ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+  }
+}

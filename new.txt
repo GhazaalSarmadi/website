@@ -1,0 +1,35 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// داده‌های نمونه برای غذاها
+const foods = [
+    {
+        id: 1,
+        name: "پیتزا مارگاریتا",
+        price: 15000,
+        image: "D:\uni\web\website 1.0.0\images\shop\bakhtiari.jpg"
+    },
+    {
+        id: 2,
+        name: "برگر گوشت",
+        price: 20000,
+        image: "http://example.com/images/beef_burger.jpg"
+    },
+    {
+        id: 3,
+        name: "سالاد سزار",
+        price: 12000,
+        image: "http://example.com/images/caesar_salad.jpg"
+    }
+];
+
+// تعریف روت برای /api/food
+app.get('/api/food', (req, res) => {
+    res.json(foods);
+});
+
+// راه‌اندازی سرور
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});

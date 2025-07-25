@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سفارش سریع غذا</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./css/food.css">
+
+    <!-- page icon -->
+    <link rel="icon" href="./images/logo/small-letter-z-5364293-4477826.webp">
+
+
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <header class="nav">
+        <a href="index.html" class="nav__logo">
+            <img src="./images/logo/logo1.png" id="static-Logo" alt="logo-image">
+        </a>
+        <nav class="nav__a">
+            <ul>
+                <li> <a href="index.html">خانه</a> </li>
+                <li> <a href="./food.html">سفارش اینترنتی غذا <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="food.html#pizza"> پیتزا </i></a>
+                        <li><a href="food.html#burger"> برگر </i></a>
+                        <li><a href="food.html#irani"> ایرانی</i></a>
+                        <li><a href="food.html#sandwich"> ساندویچ </i></a>
+                        <li><a href="food.html#sokhari"> سوخاری </i></a>
+
+                    </ul>
+                </li>
+                <li> <a href="./gallery.html">وبلاگ</a></li>
+                <li> <a href="./contact.html">تماس با ما</a></li>
+                <li><a href="./about.html">درباره ما</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav__icon">
+            <!-- From Uiverse.io by reglobby -->
+            <input class="input" placeholder="جستجو">
+            <a href="./basket.html">
+                <img src="./images/svg/cart-shopping-solid.svg" alt="" >
+                <div class="count"></div>
+            </a>
+            <i class="fa-solid fa-bars" id="open"></i>
+
+        </div>
+    </header>
+    <h1 id="pizza">پیتزا</h1>
+    <hr>
+    <div class="product-menu" data-category-id="pizza"></div>
+
+    <h1 id="burger">برگر</h1>
+    <hr>
+    <div class="product-menu" data-category-id="burger"></div>
+
+    <h1 id="sandwich">ساندویچ</h1>
+    <hr>
+    <div class="product-menu" data-category-id="sandwich"></div>
+
+    <h1 id="irani">ایرانی</h1>
+    <hr>
+    <div class="product-menu" data-category-id="irani"></div>
+
+    <h1 id="sokhari">سوخاری</h1>
+    <hr>
+    <div class="product-menu" data-category-id="sokhari"></div>
+
+    <h1 id="irani">نوشیدنی</h1>
+    <hr>
+    <div class="product-menu" data-category-id="drink"></div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__icon">
+            <img src="./images/svg/x-app.png" alt="">
+            <img src="./images/svg/googleplay.png" alt="">
+            <img src="./images/svg/Instagram.png" alt="">
+            <img src="./images/svg/whatsapp.png" alt="">
+        </div>
+        <div class="footer__img">
+            <img src="./images/homeimg/logo-kasbokar.png" alt="">
+            <img src="./images/homeimg/logo.png" alt="">
+        </div>
+        <div class="footer__address">
+            <ul class="address">
+                <li>فست فود زنجیره ای </li>
+                <li>دفتر مرکزی: کیلومتر 15جاده مخصوص کرج - خیابان 53 - نبش خیابان دوم پلاک 23
+
+                </li>
+                <li>تلفن دفتر مرکزی: 44180194-021</li>
+            </ul>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.070524951252!2d51.17706415984859!3d35.724484027711064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8def2fd93f63db%3A0xd676520d9422f79b!2z2K_Zgdiq2LEg2LnYt9in2YjbjNqG!5e0!3m2!1sfa!2s!4v1746897496621!5m2!1sfa!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="footer__map"></iframe>
+    </div>
+
+<script>
+        const menuIcon = document.querySelector('#open');
+        const menu = document.querySelector('.nav__a');
+
+
+        menuIcon.onclick = openMenu;
+        function openMenu() {
+            menu.classList.toggle("menu_phone");
+        }
+    </script>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        let ScrollDesign = document.querySelector(".nav");
+
+        function scrollFunction() {
+            if (window.pageYOffset > 80) {
+                ScrollDesign.classList.add("navbar");
+            } else {
+                ScrollDesign.classList.remove("navbar");
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const productMenus = document.querySelectorAll(".product-menu");
+            const categoryIds = Array.from(productMenus).map(menu => menu.dataset.categoryId);
+
+            // تابع برای به‌روزرسانی نمایشگر تعداد کل در هدر یا نوبار
+            function updateGlobalCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+                const globalCountDisplay = document.querySelector('.count');
+                if (globalCountDisplay) {
+                    globalCountDisplay.textContent = totalCount;
+                }
+            }
+            try {
+                const res = await fetch("http://localhost:3000/api/products-by-category", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ categoryIds })
+                });
+
+                const data = await res.json();
+                // یک شی برای دسترسی سریع به تمام محصولات بر اساس ID
+                const allProducts = {};
+                Object.values(data).forEach(categoryProducts => {
+                    categoryProducts.forEach(p => {
+                        allProducts[p.id] = p;
+                    });
+                });
+
+
+                productMenus.forEach(menu => {
+                    const catId = menu.dataset.categoryId;
+                    const products = data[catId] || [];
+
+                    products.forEach(product => {
+                        const productDiv = document.createElement("div");
+                        productDiv.className = "product";
+                        // اضافه کردن data-product-id برای شناسایی محصول
+                        productDiv.dataset.productId = product.id;
+                        productDiv.innerHTML = `
+                            <img src="${product.image}" alt="${product.name}">
+                            <div class="product-title">
+                                <h3>${product.name}</h3>
+                                <p>${product.detail}</p>
+                            </div>
+                            <div class="product-price">
+                                <span>${product.price.toLocaleString()} تومان</span>
+                                <div class="counter-container">
+                                    <i class="fa fa-fw fa-minus" data-action="decrement"></i>
+                                    <span class="counter">0</span>
+                                    <i class="fa fa-fw fa-plus" data-action="increment"></i>
+                                </div>
+                            </div>
+                        `;
+                        menu.appendChild(productDiv);
+                    });
+                });
+
+                initializeCounters(allProducts); // ارسال allProducts به تابع initializeCounters
+                updateGlobalCartCount(); // به‌روزرسانی اولیه تعداد کل سبد خرید
+            } catch (error) {
+                console.error("خطا در دریافت محصولات:", error);
+            }
+        });
+
+        function initializeCounters(allProducts) {
+            const counterContainers = document.querySelectorAll('.counter-container');
+
+            // تابع برای به‌روزرسانی سبد خرید در localStorage
+            function updateCartInLocalStorage(productId, newQuantity) {
+                let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                const existingProductIndex = cart.findIndex(item => item.productId == productId);
+
+                if (newQuantity > 0) {
+                    // اگر محصولی با این ID پیدا شد، تعداد را به‌روزرسانی کن
+                    if (existingProductIndex > -1) {
+                        cart[existingProductIndex].quantity = newQuantity;
+                    } else {
+                        // در غیر این صورت، محصول جدید را به سبد اضافه کن
+                        const productInfo = allProducts[productId];
+                        if (productInfo) {
+                            cart.push({
+                                productId: productInfo.id,
+                                name: productInfo.name,
+                                image: productInfo.image,
+                                price: productInfo.price,
+                                quantity: newQuantity
+                            });
+                        }
+                    }
+                } else {
+                    // اگر تعداد به صفر رسید، محصول را از سبد حذف کن
+                    if (existingProductIndex > -1) {
+                        cart.splice(existingProductIndex, 1);
+                    }
+                }
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateGlobalCartCount(); // به‌روزرسانی نمایشگر تعداد کل
+            }
+
+            // تابع برای به‌روزرسانی نمایشگر تعداد کل در هدر یا نوبار
+            function updateGlobalCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+                const globalCountDisplay = document.querySelector('.count');
+                if (globalCountDisplay) {
+                    globalCountDisplay.textContent = totalCount;
+                }
+            }
+
+
+            // هنگام بارگذاری، وضعیت سبد خرید را از localStorage بازیابی و نمایش دهید
+            const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+            counterContainers.forEach(container => {
+                const productDiv = container.closest('.product');
+                const productId = productDiv.dataset.productId;
+                const counterValueSpan = container.querySelector('.counter');
+
+                const cartItem = cart.find(item => item.productId == productId);
+                if (cartItem) {
+                    counterValueSpan.textContent = cartItem.quantity;
+                } else {
+                    counterValueSpan.textContent = '0';
+                }
+
+                container.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    if (!event.target.dataset.action) return;
+
+                    let currentCount = parseInt(counterValueSpan.textContent);
+                    const productId = productDiv.dataset.productId;
+
+                    if (event.target.dataset.action === 'increment') {
+                        currentCount++;
+                    } else if (event.target.dataset.action === 'decrement') {
+                        if (currentCount > 0) {
+                            currentCount--;
+                        }
+                    }
+                    counterValueSpan.textContent = currentCount;
+                    updateCartInLocalStorage(productId, currentCount);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>

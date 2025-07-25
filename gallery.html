@@ -1,151 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALLERY</title>
+    <title>وبلاگ زودفود</title>
+
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- page icon -->
+    <link rel="icon" href="./images/logo/small-letter-z-5364293-4477826.webp">
+
     <!-- style -->
     <link rel="stylesheet" href="./css/gallery.css">
 
-    <!-- aos-animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-
-    <!-- header -->
+    <!-- navigation -->
     <header class="nav">
-
+        <a href="index.html" class="nav__logo">
+            <img src="./images/logo/logo1.png" id="static-Logo" alt="logo-image">
+        </a>
         <nav class="nav__a">
-            <a href="./index.html">HOME</a>
-            <a href="./gallery.html">GALLERY</a>
-            <a href="./shop.html">SHOP</a>
-            <a href="./contact.html">CONTACT</a>
+            <ul>
+                <li> <a href="index.html">خانه</a> </li>
+                <li> <a href="./food.html">سفارش اینترنتی غذا <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="food.html#pizza"> پیتزا </i></a>
+                        <li><a href="food.html#burger"> برگر </i></a>
+                        <li><a href="food.html#irani"> ایرانی</i></a>
+                        <li><a href="food.html#sandwich"> ساندویچ </i></a>
+                        <li><a href="food.html#sokhari"> سوخاری </i></a>
+
+                    </ul>
+                </li>
+                <li> <a href="./gallery.html">وبلاگ</a></li>
+                <li> <a href="./contact.html">تماس با ما</a></li>
+                <li><a href="./about.html">درباره ما</a></li>
+            </ul>
         </nav>
+
+        <div class="nav__icon">
+            <!-- From Uiverse.io by reglobby -->
+            <input class="input" placeholder="جستجو">
+            <i class="fa-solid fa-bars" id="open"></i>
+
+        </div>
     </header>
 
-    <hr>
+    <div class="banner">
+        <h3>آموزش آشپزی حرفه ای را دنبال کنید. سایت ما ماموریت محتوایی خود را ارتقای سطح دانش آشپزی
+            تخصصی ایرانیان تعیین کرده و در این مسیر تمام تلاش خودش را می‌کند.</h3>
+    </div>
 
-    <div class="head">
-        <a href="./index.html">
-            <div class="head__logo">
-                <img src="./images/logo/logo2.png" alt="">
+
+    <div class="blog_content">
+
+
+        <div class="cellOne">
+            <div class="imgone">
+                <img src="./images/galleryimg/row1-1.jpg" alt="">
+            </div>
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
+        </div>
+        <div class="cellOne">
+            <div class="imgone">
+                <img src="./images/galleryimg/row1-2.jpg" alt="">
+            </div>
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
+        </div>
+        <a href="./blog1.html">
+            <div class="cellOne">
+                <div class="imgone">
+                    <img src="./images/galleryimg/row3-2.jpg" alt="">
+                </div>
+                <div class="txtone">
+                    <h4>طرز تهیه انواع قیمه مجلسی ایرانی برای مراسم و مهمانی ها
+                    </h4>
+                    <p>اگر از شما بخواهند ۵ غذای ایرانی را نام ببرید، حتما در کنار غذاهایی مانند خورش قرمه سبزی یا خورش
+                        کرفس به خورش قیمه هم اشاره می‌کنید.</p>
+                </div>
             </div>
         </a>
-        <div class="head__txt">
-            <h1>-THERE IS WONDER IN THE UNIQUENESS OF EACH WEDDING WE CAPTURE -</h1>
-            <h2>There is so much happening on the day of your wedding, so much you wont see or remember. That is why you
-                will receive a large gallery in colour along with a duplicate gallery in black and white, all in a
-                beautiful
-                online gallery together with a storage USB as a backup.</h2>
-        </div>
-
-    </div>
-
-    <hr>
-
-
-    <div class="imgsection">
-        <div class="imgsection__row1">
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row1-1.jpg" alt="">
-                <h3>Caroline and Michael | Kilshane House</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row1-2.jpg" alt="">
-                <h3>Sheen Falls Hotel | Rachel and Gearoid</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row1-3.jpg" alt="">
-                <h3>A Lyrath Wedding | Triona & Marcus</h3>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
+        </div>
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row1-4.jpg" alt="">
-                <h3>A Christmas time wedding at Bellingham Castle
-                </h3>
             </div>
-
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
         </div>
-        <div class="imgsection__row2">
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row2-1.jpg" alt="">
-                <h3>Coolbawn Quay with Deirdre & Darren</h3>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
+        </div>
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row2-2.jpg" alt="">
-                <h3>Daniel & Siobhán | Darver Castle</h3>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
+            </div>
+        </div>
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row2-3.jpg" alt="">
-                <h3>Emma and Aaron's at The Dingle Skellig Hotel</h3>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row5-2.jpg" alt="">
-                <h3>Aoife & Brian | Inchydoney Island </h3>
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
             </div>
         </div>
-        <div class="imgsection__row3">
-
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
+        <div class="cellOne">
+            <div class="imgone">
                 <img src="./images/galleryimg/row3-1.jpg" alt="">
-                <h3>Pamela & Ronan | Ashley Park</h3>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row3-2.jpg" alt="">
-                <h3>Maura & Doug at Muckross Park | Gougane Barra</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row3-3.jpg" alt="">
-                <h3>Romantic Los Cabos Destination Wedding</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row3-4.jpg" alt="">
-                <h3>Sea Island Spring Garden Party Inspired Wedding</h3>
+            <div class="txtone">
+                <h4>طرز تهیه لاوا کیک خوشمزه و ساده</h4>
+                <p>لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون
+                    می‌ریزد و
+                    آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.</p>
             </div>
         </div>
-        <div class="imgsection__row4">
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row4-1.jpg" alt="">
-                <h3>Magical Wedding in the Redwoods</h3>
+        <div class="cellOne">
+            <div class="imgone">
+                <img src="./images/homeimg/pizza_blog.jpg" alt="">
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row4-2.jpg" alt="">
-                <h3>Fiona & Dickson</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row4-3.jpg" alt="">
-                <h3>Chloe & Charlie , Spain</h3>
-            </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="2000">
-                <img src="./images/galleryimg/row5-4.jpg" alt="">
-                <h3> Chris & Ash, Fyansford</h3>
+            <div class="txtone">
+                <h4>10 نوع پیتزای محبوب در دنیا که حتما باید امتحان کنید</h4>
+                <p>در دنیای خوشمزه‌ی غذاها، پیتزا جایگاه ویژه‌ای دارد؛ غذایی که مرزهای فرهنگی را پشت سر گذاشته و تقریباً
+                    در
+                    همه کشورها طرفداران دوآتشه‌ای دارد. از خمیر ترد ناپلی گرفته تا پنیر کش‌دار پیتزاهای آمریکایی، هر مدل
+                    پیتزا داستان خودش را دارد.</p>
             </div>
         </div>
+        <div class="cellOne">
+            <div class="imgone">
+                <img src="./images/homeimg/sauce_blog.jpg" alt="">
+            </div>
+            <div class="txtone">
+                <h4>نبرد سس‌ها، کدوم سس بهترین همراه همبرگره؟</h4>
+                <p> زمانی که می‌خواهی یک همبرگر سفارش بدی، یکی از مهم‌ترین انتخاب‌ها بعد از نوع گوشت و نان، انتخاب سس
+                    مناسبه.</p>
+            </div>
+        </div>
+        <div class="cellOne">
+            <div class="imgone">
+                <img src="./images/homeimg/burger_blog.jpg" alt="">
+            </div>
+            <div class="txtone">
+                <h4>۵ ترفند طلایی برای لذت بردن بیشتر از غذای فست فود</h4>
+                <p>منوهای فست فود معمولاً پر از گزینه‌های متنوع هستن؛ از برگرهای آبدار و مرغ سوخاری گرفته تا پیتزاهای
+                    پرپنیر
+                    و سیب‌زمینی سرخ‌شده. اما انتخاب درست یعنی هم به ذائقه‌ات احترام گذاشتی، هم بدنت رو راضی نگه داشتی.
+                </p>
+            </div>
+        </div>
+
+
+
 
     </div>
 
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__icon">
+            <img src="./images/svg/x-app.png" alt="">
+            <img src="./images/svg/googleplay.png" alt="">
+            <img src="./images/svg/Instagram.png" alt="">
+            <img src="./images/svg/whatsapp.png" alt="">
+        </div>
+        <div class="footer__img">
+            <img src="./images/homeimg/logo-kasbokar.png" alt="">
+            <img src="./images/homeimg/logo.png" alt="">
+        </div>
+        <div class="footer__address">
+            <ul class="address">
+                <li>فست فود زنجیره ای </li>
+                <li>دفتر مرکزی: کیلومتر 15جاده مخصوص کرج - خیابان 53 - نبش خیابان دوم پلاک 23
+
+                </li>
+                <li>تلفن دفتر مرکزی: 44180194-021</li>
+            </ul>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.070524951252!2d51.17706415984859!3d35.724484027711064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8def2fd93f63db%3A0xd676520d9422f79b!2z2K_Zgdiq2LEg2LnYt9in2YjbjNqG!5e0!3m2!1sfa!2s!4v1746897496621!5m2!1sfa!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="footer__map"></iframe>
+    </div>
 
     <script>
-        let ShopTxt = document.querySelector("#shop");
-        let list = document.querySelector(".shop");
+        const menuIcon = document.querySelector('#open');
+        const menu = document.querySelector('.nav__a');
+   
 
-        ShopTxt.onclick = openMenu;
+        menuIcon.onclick = openMenu;
         function openMenu() {
-            list.classList.toggle("shop-List");
+            menu.classList.toggle("menu_phone");
         }
     </script>
-        <script>
-            AOS.init();
-        </script>
 </body>
 
 </html>

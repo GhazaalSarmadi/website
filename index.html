@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For The Lovers</title>
+    <title>سفارش سریع غذا</title>
 
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -16,15 +22,7 @@
         crossorigin="anonymous"></script>
 
     <!-- page icon -->
-    <link rel="icon" href="./images/logo/pageicon.png">
-
-    <!-- style -->
-    <link rel="stylesheet" href="./css/main.css">
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/logo/small-letter-z-5364293-4477826.webp">
 
     <!-- aos-animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -34,146 +32,548 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css">
+    
 </head>
 
 <body>
 
+    <!-- navigation -->
+    <header class="nav">
+        <a href="index.html" class="nav__logo">
+            <img src="./images/logo/logo1.png" id="static-Logo" alt="logo-image">
+        </a>
+        <nav class="nav__a">
+            <ul>
+                <li> <a href="index.html">خانه</a> </li>
+                <li> <a href="./food.html">سفارش اینترنتی غذا <i class="fas fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="food.html#pizza"> پیتزا </i></a>
+                        <li><a href="food.html#burger"> برگر </i></a>
+                        <li><a href="food.html#irani"> ایرانی</i></a>
+                        <li><a href="food.html#sandwich"> ساندویچ </i></a>
+                        <li><a href="food.html#sokhari"> سوخاری </i></a>
+
+                    </ul>
+                </li>
+                <li> <a href="./gallery.html">وبلاگ</a></li>
+                <li> <a href="./contact.html">تماس با ما</a></li>
+                <li><a href="./about.html">درباره ما</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav__icon">
+            <!-- From Uiverse.io by reglobby -->
+            <input class="input" placeholder="جستجو">
+            <i class="fa-solid fa-bars" id="open"></i>
+
+        </div>
+    </header>
+
     <!-- slide -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <!-- navigation -->
-        <header class="nav">
-            <div class="nav__logo">
-                <img src="./images/logo/logo2.png" id="static-Logo" alt="logo-image">
-                <img src="./images/logo/logo.png" id="scroll-Logo" alt="">
-            </div>
-
-            <nav class="nav__a">
-                <a href="index.html">HOME</a>
-                <a href="./gallery.html">GALLERY</a>
-                <a href="./shop.html">SHOP</a>
-                <a href="./contact.html">CONTACT</a>
-            </nav>
-            <div class="nav__icon">
-                <i class="fa fa-bag-shopping"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa fa-magnifying-glass"></i>
-                <i class="fa fa-bars" id="bars"></i>
-            </div>
-        </header>
 
         <!-- bootsrap tags -->
-        <div class="carousel-inner">
-            <div class="backimg1 carousel-item active" style="width: 100%;"></div>
-            <div class="backimg2 carousel-item" style="width: 100%;"></div>
-            <div class="backimg3 carousel-item" style="width: 100%;"></div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item backimg1 active">
+                    <!-- From Uiverse.io by vinodjangid07 -->
+                    <div class="cookieCard">
+                        <p class="cookieHeading">آخر هفته‌ای متفاوت با طعم‌های دلپذیر</p>
+                        <p class="cookieDescription">هر آخر هفته، منوی ویژه‌ای از غذاهای خوشمزه با تخفیف‌های
+                            باورنکردنی داریم.
+                            فرصت رو از دست ندید!</p>
+                        <button onclick="location.href='#scroll-img'" class="acceptButton">مشاهده منو</button>
+                    </div>
+                </div>
+                <div class="carousel-item backimg2">
+                    <div class="cookieCard2">
+                        <h1>رستوران زودفود</h1>
+                    
+                    </div>
+                </div>
+                <div class="carousel-item backimg3"></div>
+                <div class="carousel-item backimg4"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
 
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
     <!-- scroll text -->
-    <div class="scroll-Txt">
-        <div class="scroll-Txt__line"></div>
-        <h1>You Bring The Love,</h1>
-        <h2 data-aos="zoom-in-left">we tell the story</h2>
+    <div class="scroll-img" id="scroll-img">
+        <img src="../website 1.0.0/images/logo/eoils-basil.png">
     </div>
 
+    <!-- menu -->
+    <div class="tab"=>
 
-    <!-- image section -->
-    <div class="img-Section">
-        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-            <img src="./images/homeimg/cake.jpg" alt="left-img-cake">
-            <a href="">All Design</a>
-        </div>
+        <button class="tablinks" onclick="openMyTab(event, 'tab1')" id="defaultOpen">
+            <img src="./images/homeimg/pizza_icone.jpg" alt="">
+            پیتزا</button>
+        <button class="tablinks" onclick="openMyTab(event, 'tab2')">
+            <img src="./images/homeimg/burger_icon.jpg" alt="">
+            برگر</button>
+        <button class="tablinks" onclick="openMyTab(event, 'tab3')">
+            <img src="./images/homeimg/irani_icon.png" alt="">
+            ایرانی</button>
+        <button class="tablinks" onclick="openMyTab(event, 'tab4')">
+            <img src="./images/homeimg/sandwich_icon.jpg" alt="">
+            ساندویچ</button>
+        <button class="tablinks" onclick="openMyTab(event, 'tab5')">
+            <img src="./images/homeimg/sokhari_icon.jpg" alt="">
+            سوخاری</button>
 
-        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-            <h2>Wedding Day</h2>
-            <img src="./images/homeimg/flower.jpg" alt="center-img-flower">
-            <a href="">Our Story</a>
-        </div>
+    </div>
 
-        <div class="img-Section__link" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-            <img src="./images/homeimg/place.jpg" alt="right-img-place">
-            <a href="">Preparations</a>
+    <div id="tab1" class="tabcontent">
+        <!-- image section -->
+        <div class="img-Section">
+            <div class="img-Section__link">
+                <img src="./images/homeimg/Vegetable.jpg">
+                <h5>پیتزا سبزیجات
+                </h5>
+                <p>قارچ - فلفل سبز- هویج- ذرت- نخودفرنگی
+                </p>
+                <div class="price">
+                    <p>280,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/makhsos.jpg">
+                <h5>پیتزا مخصوص (یک نفره)
+                </h5>
+                <p>ژامبون مرغ - ژامبون گوشت- قارچ-پنیر - فلفل دلمه ای
+                </p>
+                <div class="price">
+                    <p>350,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <!-- <h2>Wedding Day</h2> -->
+                <img src="./images/homeimg/peperooni.jpg">
+                <h5>پیتزا پپرونی (بزرگ)
+                </h5>
+                <p>پپرونی - قارچ-پنیر-فلفل دلمه ای ، تند!
+                </p>
+                <div class="price">
+                    <p>400,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/goosht.jpg">
+                <h5>پیتزا گوشت و قارچ(یک نفره)
+                </h5>
+                <p>گوشت چرخ کرده- قارچ-پنیر-فلفل دلمه ای
+                </p>
+                <div class="price">
+                    <p>390,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/mix.jpg">
+                <h5>پیتزا میکس (یک نفره)
+                </h5>
+                <p>گوشت ریش شده-فیله سوخاری- قارچ-پنیر-فلفل دلمه ای
+                </p>
+                <div class="price">
+                    <p>450,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div id="tab2" class="tabcontent">
+        <!-- image section -->
+        <div class="img-Section">
+            <div class="img-Section__link">
+                <img src="./images/homeimg/suprim.jpg">
+                <h5>برگر سوخاری
+                </h5>
+                <p>فیله سوخاری(180 گرم)- ژامبون گوشت 90% -گوجه فرنگی- قارچ- خیارشور-کاهو- پنیر</p>
+                <div class="price">
+                    <p>350,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/mixburger.jpg">
+                <h5>میکس برگر
+                </h5>
+                <p>فیله سوخاری(130 گرم) - برگر(150 گرمی)-ژامبون گوشت90%- قارچ - گوجه فرنگی-خیارشور-کاهو - پنیر</p>
+                <div class="price">
+                    <p>500,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
 
+            <div class="img-Section__link">
+                <img src="./images/homeimg/berger2.jpg">
+                <h5>رویال برگر دبل
+                </h5>
+                <p>دو عدد برگر(150 گرمی)- ژامبون گوشت90%- قارچ- گوجه فرنگی- خیارشور-کاهو - پنیر</p>
+                <div class="price">
+                    <p>490,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/zoghali.jpg">
+                <h5>رویال برگر (زغالی)
+                </h5>
+                <p>برگر(150 گرمی)- ژامبون گوشت90%- قارچ-گوجه فرنگی - خیارشور-کاهو - پنیر
+                </p>
+                <div class="price">
+                    <p>380,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/classic.jpg">
+                <h5>برگر
+                </h5>
+                <p>200 گرم گوشت گوساله، کاهو، خیارشور، گوجه، سس آیولی </p>
+                <div class="price">
+                    <p>290,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+        <div class="img-Section">
+            <div class="img-Section__link">
+                <img src="./images/homeimg/baghalipolo-morgh-768x768.jpg">
+                <h5>باقالی پلو با ران مرغ
+                </h5>
+                <p>برنج طارم باقالی پلو (شوید و باقالی تازه) + مرغ به انتخاب ران یا سینه + آب مرغ + ته دیگ + نان</p>
+                <div class="price">
+                    <p>300,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/kobide-768x768.jpg">
+                <h5>چلو کباب کوبیده (دو سیخ)
+                </h5>
+                <p> دو سیخ 110 گرم + برنج طارم + کره + زعفران + گوجه کبابی + فلفل کبابی + ته دیگ + نارنج + پیاز +
+                    سماغ +
+                    نان </p>
+                <div class="price">
+                    <p>450,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <!-- <h2>Wedding Day</h2> -->
+                <img src="./images/homeimg/joje-768x768.jpg">
+                <h5>چلو جوجه کباب
+                </h5>
+                <p>جوجه 250 گرم + برنج طارم + کره + زعفران + گوجه کبابی + فلفل کبابی + ته دیگ + نارنج + نان </p>
+                <div class="price">
+                    <p>200,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/zereshkpolo-morgh-768x768.jpg">
+                <h5>زرشک پلو با مرغ
+                </h5>
+                <p>برنج طارم + نثار زرشک پلو (زرشک ، خلال پسته و بادام ) + مرغ به انتخاب ران یا سینه + بادمجان + آب
+                    مرغ
+                    + ته دیگ + نان</p>
+                <div class="price">
+                    <p>250,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/cholo-barg-1-768x768.jpg">
+                <h5>چلو کباب برگ
+                </h5>
+                <p>۱۷۰ گرم گوشت راسته با برنج، دورچین: گوجه کبابی، فلفل کبابی، نارنج، به همراه یک عدد نان تافتون</p>
+                <div class="price">
+                    <p>600,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab4" class="tabcontent">
+        <div class="img-Section">
+            <div class="img-Section__link">
+                <img src="./images/homeimg/hotdog.jpg">
+                <h5>ساندویچ هات داگ
+                </h5>
+
+                <p>یک عدد هات داگ، پنیر، قارچ، گوجه، خیارشور، نان باگت
+                </p>
+                <div class="price">
+                    <p>100,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/file.jpg">
+                <h5>ساندویچ فیله مرغ
+                </h5>
+                <p> 220 گرم فیله مرغ طعم دار گریل شده، کاهو، گوجه، خیارشور، سس خردل مخصوص، نان باگت
+                </p>
+                <div class="price">
+                    <p>220,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/beaf.jpg">
+                <h5>رست بیف
+                </h5>
+                <p>200 گرم گوشت ماهیچه گوساله رست شده، گوجه، خیارشور، کاهو، سس مخصوص
+                </p>
+                <div class="price">
+                    <p>420,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/steak.jpg">
+                <h5>ساندویچ استیک و قارچ
+                </h5>
+                <p>گوشت گوساله - قارچ - فلفل دلمه - گوجه - خیارشور - چیپس - کاهو - سس مخصوص
+
+                </p>
+                <div class="price">
+                    <p>500,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/suprim_s.jpg">
+                <h5>ساندویچ سوپریم
+                </h5>
+                <p>سه عدد فیله سوخاری - ژامبون - قارچ - پنیر
+
+                </p>
+                <div class="price">
+                    <p>420,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab5" class="tabcontent">
+        <div class="img-Section">
+            <div class="img-Section__link">
+                <img src="./images/homeimg/morgh_sokhari.jpg">
+                <h5>مرغ سوخاری 2 تکه
+                </h5>
+                <p>2 تکه مرغ سوخاری ران یا سینه، به همراه سیب زمینی سرخ کرده،
+                </p>
+                <div class="price">
+                    <p>250,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/sine_sokhari.jpg">
+                <h5>میکس سوخاری سینه
+                </h5>
+                <p>۲ تکه مرغ سوخاری، ۲ تکه فیله مرغ سوخاری، ۲ تکه بال مرغ سوخاری</p>
+                <div class="price">
+                    <p>650,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/sabzijat.jpg">
+                <h5>بشقاب فیله و سبزیجات
+                </h5>
+                <p>دو رول فیله سوخاری با مغز پنیری، سبزیجات،</p>
+                <div class="price">
+                    <p>300,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+
+            <div class="img-Section__link">
+                <img src="./images/homeimg/korn_morgh.jpg">
+                <h5>پاپ کورن مرغ
+                </h5>
+                <p>حدودا 15 تکه پاپ کورن مرغ
+                </p>
+                <div class="price">
+                    <p>600,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+            <div class="img-Section__link">
+                <img src="./images/homeimg/sokhari_3tike.jpg">
+                <h5>مرغ سوخاری 3 تکه
+                </h5>
+                <p>3 تکه مرغ سوخاری ران یا سینه، به همراه سیب زمینی سرخ کرده،</p>
+                <div class="price">
+                    <p>260,000 تومان</p>
+                    <button>سفارش</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- cta section -->
     <div class="cta">
         <div class="cta__txt">
-            <h2>Golden Moment Wedding Photography & Film</h2>
-            <h3>ARE YOU READY TO EXPERIENCE <br> YOUR SPECIAL DAY WITH US?</h3>
-            <a href="./contact.html">Contact With Us</a>
+
+            <h2>
+                با ثبت اشتراک غذات رو <span style="color: #d79f2f;">رایگان</span> و <span
+                    style="color: #d79f2f;">سریع</span> تحویل بگیر!
+            </h2>
+
+
+            <form>
+                <div class="input-with-icon">
+                    <img src="./images/svg/user-solid (1).svg" alt="">
+                    <input type="text" id="name" name="name" placeholder="نام">
+                </div>
+
+                <div class="input-with-icon">
+                    <img src="./images/svg/phone-solid.svg" alt="">
+                     <input type="text" id="number" name="number" placeholder="شماره تماس">
+                </div>
+
+                <div class="input-with-icon">
+                    <img src="./images/svg/city-solid.svg" alt="">
+                    <select id="city" name="city">
+                        <option value="" disabled selected>انتخاب شهر</option>
+                        <option value="tehran">تهران</option>
+                        <option value="mashhad">مشهد</option>
+                        <option value="esfahan">اصفهان</option>
+                        <option value="shiraz">شیراز</option>
+                        <option value="tabriz">تبریز</option>
+                        <option value="karaj">کرج</option>
+                        <!-- اضافه کردن شهرهای دیگر -->
+                    </select>
+                </div>
+            </form>
+
+
+            <a href="./contact.html" class="eshterak">اشتراک</a>
         </div>
     </div>
 
 
     <!-- Behind the Scenes section-->
+    <h1 style="margin-top: 4em; text-align: center; color: red; font-size: larger;">آخرین اخبار و رویداد ها</h1>
     <div class="last-Section">
-        <img src="./images/homeimg/leftimg.jpg" alt="left-img">
-
-        <div class="last-Section__txt" data-aos="zoom-out-up" data-aos-duration="3000">
-            <h1>Behind the Scenes as a Wedding Photographer</h1>
-            <p>Being in the wedding photography industry is one of the coolest and most rewarding professions anyone can
-                have. Wedding photographers are taking pictures of the extraordinary social event that is the bringing
-                together of two people in love. It is being a part of a day that the couple will remember for the rest
-                of
-                their lives. It is capturing and creating work that will become part of their family’s heritage and will
-                be
-                passed down through generations. It is truly a privilege to be a part of this industry.
-                It is also a huge responsibility and not as glamorous as the couple, or any person for that matter may
-                think. Only a small percentage of the work that a wedding photographer does is going to the ceremony and
-                taking photos. There is editing all of the photos, filing the taxes, managing the finances, emailing all
-                of the clients, and so on.
+        <div class="cart_blog" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/homeimg/burger_blog.jpg" alt="">
+            <h3>۵ ترفند طلایی برای لذت بردن بیشتر از غذای فست فود</h3>
+            <p>منوهای فست فود معمولاً پر از گزینه‌های متنوع هستن؛ از برگرهای آبدار و مرغ سوخاری گرفته تا پیتزاهای
+                پرپنیر
+                و سیب‌زمینی سرخ‌شده. اما انتخاب درست یعنی هم به ذائقه‌ات احترام گذاشتی، هم بدنت رو راضی نگه داشتی.
             </p>
+            <button>ادامه مطلب</button>
+
         </div>
-        <img src="./images/homeimg/rightimg.jpg" alt="right-img">
+        <div class="cart_blog" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/homeimg/sauce_blog.jpg" alt="">
+            <h3>نبرد سس‌ها، کدوم سس بهترین همراه همبرگره؟</h3>
+            <p> زمانی که می‌خواهی یک همبرگر سفارش بدی، یکی از مهم‌ترین انتخاب‌ها بعد از نوع گوشت و نان، انتخاب سس
+                مناسبه.</p>
+            <button>ادامه مطلب</button>
+
+        </div>
+        <div class="cart_blog" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./images/homeimg/pizza_blog.jpg" alt="">
+            <h3>10 نوع پیتزای محبوب در دنیا که حتما باید امتحان کنید</h3>
+            <p>در دنیای خوشمزه‌ی غذاها، پیتزا جایگاه ویژه‌ای دارد؛ غذایی که مرزهای فرهنگی را پشت سر گذاشته و تقریباً
+                در
+                همه کشورها طرفداران دوآتشه‌ای دارد. از خمیر ترد ناپلی گرفته تا پنیر کش‌دار پیتزاهای آمریکایی، هر مدل
+                پیتزا داستان خودش را دارد.</p>
+            <button>ادامه مطلب</button>
+
+        </div>
+
     </div>
 
 
     <!-- Footer -->
     <div class="footer">
-        <p>
-            Hand-crafted, award-winning, luxury high-end wedding photography & films in Ireland.
-            <br>
-            Irish Wedding Photographer | Irish Wedding Videographer
-            <br>
-            7 The Fairways, Faithlegg, Waterford, Ireland
-            <br>
-            2020 - Alan Golden Ltd. Registered in Ireland no.551086 All rights reserved
-            <br>
-            facebook | instagram
-            <br>
-            Tel: (051) 380741 | 085 1975717 | 087 6889330
-            <br>
-            All images on this website are the property of Golden Moments Wedding Photography & Film. All rights
-            reserved.
-            <br>
-            PRIVACY POLICY
-        </p>
+        <div class="footer__icon">
+            <img src="./images/svg/x-app.png" alt="">
+            <img src="./images/svg/googleplay.png" alt="">
+            <img src="./images/svg/Instagram.png" alt="">
+            <img src="./images/svg/whatsapp.png" alt="">
+        </div>
+        <div class="footer__img">
+            <img src="./images/homeimg/logo-kasbokar.png" alt="">
+            <img src="./images/homeimg/logo.png" alt="">
+        </div>
+        <div class="footer__address">
+            <ul class="address">
+                <li>فست فود زنجیره ای </li>
+                <li>دفتر مرکزی: کیلومتر 15جاده مخصوص کرج - خیابان 53 - نبش خیابان دوم پلاک 23
 
-        <iframe class="footer__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40015313.59738712!2d71.02566599999997!3d52.255354000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c7433fed102f%3A0x7d0d7418ffa8d569!2sGolden%20Moments%20Wedding%20Photography%20%26%20Film!5e0!3m2!1sfa!2s!4v1688732907561!5m2!1sfa!2s"
+                </li>
+                <li>تلفن دفتر مرکزی: 44180194-021</li>
+            </ul>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.070524951252!2d51.17706415984859!3d35.724484027711064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8def2fd93f63db%3A0xd676520d9422f79b!2z2K_Zgdiq2LEg2LnYt9in2YjbjNqG!5e0!3m2!1sfa!2s!4v1746897496621!5m2!1sfa!2s"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="footer__map"></iframe>
     </div>
 
 
-    <!-- script -->
-    <script>
-        let icon = document.querySelector("#bars");
-        let nav = document.querySelector(".nav__a");
+    <script>document.querySelectorAll('.price').forEach(product => {
+            const orderButton = product.querySelector('button');
 
-        icon.onclick = openMenu;
+            orderButton.addEventListener('click', () => {
+                if (orderButton.textContent === 'سفارش') {
+                    orderButton.style.backgroundColor = '#ef5328';
+                    orderButton.textContent = 'حذف';
+                } else {
+                    orderButton.style.backgroundColor = '';
+                    orderButton.textContent = 'سفارش';
+                }
+            });
+        });
+
+    </script>
+    <script>
+        const menuIcon = document.querySelector('#open');
+        const menu = document.querySelector('.nav__a');
+
+
+        menuIcon.onclick = openMenu;
         function openMenu() {
-            nav.classList.toggle("show");
+            menu.classList.toggle("menu_phone");
         }
     </script>
 
@@ -183,7 +583,7 @@
         let ScrollDesign = document.querySelector(".nav");
 
         function scrollFunction() {
-            if (window.pageYOffset > 100) {
+            if (window.pageYOffset > 80) {
                 ScrollDesign.classList.add("navbar");
             } else {
                 ScrollDesign.classList.remove("navbar");
@@ -191,6 +591,25 @@
         }
     </script>
 
+    <script>
+
+
+        function openMyTab(evt, myTabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(myTabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+
+    </script>
 
     <script>
         AOS.init();
