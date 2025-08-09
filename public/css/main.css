@@ -275,6 +275,7 @@ p {
 
 /* Style the tab */
 .tab {
+  margin-top: 4rem;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
